@@ -1,0 +1,70 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.underline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #181818;
+  font-size: 30px;
+  font-weight: normal; /* Normal font weight by default */
+  transition: all 0.3s ease-in-out; /* Smooth transition for font weight and movement */
+}
+
+/* Creating the underline with a pseudo-element */
+.underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -5px; /* Position the underline slightly lower */
+  left: 0;
+  background-color: #FFD700; /* Yellow underline */
+  visibility: visible; /* Visible even without hover */
+  transform: scaleX(0); /* Start scale at 0 */
+  transform-origin: left; /* Scale from the left side */
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Hover effect: Making the text bold and shifting slightly */
+.underline {
+  font-weight: bold; /* Make the text bold on hover */
+  transform: translateX(5px); /* Slight movement to the right */
+
+}
+
+/* Hover effect: Animating the underline */
+.underline::before {
+  transform: scaleX(1); /* Scale the underline to full width */
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.bg1{
+  background-image: url("./assets/bg1.webp");
+}
+.bg2{
+  background-image: url("./assets/bg2.jpg");
+}
+
+.images{
+  height: 100px;
+  width: 100px;
+}
+
+@media screen and (max-width: 750px) {
+  .images {
+    height: 50px;
+    width: 50px;
+  }
+}

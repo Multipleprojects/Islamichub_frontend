@@ -1,0 +1,9 @@
+.versee {
+    width: 500px;
+}
+
+@media screen and (max-width: 750px) { /* Add space between and and the parentheses */
+    .versee {
+        width: 160px;
+    }
+}

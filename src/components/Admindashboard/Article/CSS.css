@@ -1,0 +1,76 @@
+/* CSS.css */
+.articlescrollbar {
+  max-height: 600px; /* Set your desired max height */
+  overflow-y: scroll;
+  /* For modern browsers */
+  scrollbar-color: rgb(8,124,128) rgba(0, 0, 0, 0.1); /* Track color is rgba(0, 0, 0, 0.1) */
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+.articlescrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.articlescrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Track color */
+}
+
+.articlescrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(8,124,128); /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners for the scrollbar */
+}
+
+.containerr{
+  padding: 2rem;
+}
+.search{
+  width: 100vw;
+  max-width: 800px
+}
+.article:hover{
+background-color: whitesmoke;
+cursor: pointer;
+}
+.card {
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .card-body {
+    padding: 1.25rem;
+  }
+  
+  .modal-content {
+    border-radius: 0.25rem;
+  }
+  
+  .modal-header, .modal-footer {
+    border: none;
+  }
+  /* CSS.css */
+.article-card {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .articlescrollbar {
+    max-height: 510px; /* Set desired max height for smaller screens */
+    overflow-y: scroll; /* Ensure scrollbar is always visible */
+  }
+  
+.search{
+  width: 100%;
+  max-width: 400px
+}
+}
+@media (max-width: 1000px) {
+  .articlescrollbar {
+    max-height: 620px; /* Set desired max height for smaller screens */
+    overflow-y: scroll; /* Ensure scrollbar is always visible */
+  }
+  
+.search{
+  width: 100%;
+  max-width: 600px
+}
+}

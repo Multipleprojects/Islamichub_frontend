@@ -1,0 +1,80 @@
+/* Custom hover effect for navbar links */
+.hover-effect:hover {
+    color: rgb(209, 173, 60) !important;
+  }
+  
+  .fab {
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .fab:hover {
+    color: rgb(209, 173, 60);
+  }
+  .header-image {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background-color: rgb(8, 124, 128);
+    background-image: url("/quran.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .header-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay with slight opacity */
+    z-index: 1; /* Keep the overlay behind the text */
+  }
+  
+  @keyframes moveText {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(5px); /* Move right by 5 pixels */
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .overlay {
+    position: absolute; /* Position it relative to the parent */
+    top: 10%; /* Vertical center */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    text-align: center;
+    color: white;
+    z-index: 2;
+    animation: moveText 2s ease-in-out infinite;
+  
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center; /* Center elements horizontally */
+  
+    width: 100%; /* Full width to center on small screens */
+    height: 100%; /* Full height to ensure it works on all screens */
+  }
+  .message-text {
+    max-width: 700px; /* Set a maximum width for large screens */
+    line-height: 2; 
+  }
+
+  @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-in-image {
+  animation: fadeIn 3s forwards; /* Change duration as needed */
+}
+

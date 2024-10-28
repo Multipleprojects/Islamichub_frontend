@@ -1,0 +1,38 @@
+
+
+  .userarticle {
+    max-height: 610px; /* Set your desired max height */
+    overflow-y: scroll;
+    /* For modern browsers */
+    scrollbar-color: rgb(8,124,128) rgba(0, 0, 0, 0.1); /* Track color is rgba(0, 0, 0, 0.1) */
+  }
+  
+  /* For WebKit browsers (Chrome, Safari) */
+  .userarticle::-webkit-scrollbar {
+    width: 8px;
+  }
+  .feature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2.5rem;
+  }
+  .userarticle::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Track color */
+  }
+  
+  .userarticle::-webkit-scrollbar-thumb {
+    background-color: rgb(8,124,128); /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded corners for the scrollbar */
+  }
+  
+
+  @media (max-width: 768px) {
+    .userarticle {
+      max-height: 460px; /* Set your desired max height */
+      overflow-y: scroll;
+      /* For modern browsers */
+      scrollbar-color: rgb(8,124,128) rgba(0, 0, 0, 0.1); /* Track color is rgba(0, 0, 0, 0.1) */
+    }
+     
+  }

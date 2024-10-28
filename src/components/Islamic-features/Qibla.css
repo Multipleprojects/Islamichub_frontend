@@ -1,0 +1,73 @@
+.compass-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .compass {
+    width: 300px;
+    height: 300px;
+    border: 10px solid #08b89e;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    background: radial-gradient(circle, #ffffff, #e0e0e0);
+  }
+  
+  .needle {
+    width: 2px;
+    height: 120px;
+    background-color: red;
+    position: absolute;
+    top: 30px;
+  }
+  
+  .qibla-indicator {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 20px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Compass directions */
+  .direction {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .north {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .east {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .south {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .west {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  

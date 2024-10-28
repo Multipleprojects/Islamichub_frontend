@@ -1,0 +1,138 @@
+.video-upload-container {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.8rem;
+  }
+  .upload-box {
+    border: 2px dashed rgb(8,124,128);
+    border-radius: 0.4rem;
+    padding: 10px;
+  }
+  .scrollable {
+    max-height: 350px; /* Set your desired max height */
+    overflow-y: scroll;
+    /* For modern browsers */
+    scrollbar-color: rgb(8,124,128) rgba(0, 0, 0, 0.1); /* Track color is rgba(0, 0, 0, 0.1) */
+  }
+  
+  /* For WebKit browsers (Chrome, Safari) */
+  .scrollable::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollable::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Track color */
+  }
+  
+  .scrollable::-webkit-scrollbar-thumb {
+    background-color: rgb(8,124,128); /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded corners for the scrollbar */
+  }
+  
+  
+  .upload-box p {
+    margin: 10px 0;
+  }
+  
+  .upload-button {
+    display: inline-block;
+    background-color: rgb(8,124,128);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .upload-confirm-button {
+    background-color: rgb(8,124,128);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .upload-confirm-button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  .video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .video-item {
+    flex: 1 1 calc(25% - 16px); /* Adjusts the width to 25% of the container minus the gap */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .video-info {
+    margin-top: 6px;
+    text-align: center;
+  }
+  
+  .delete-button {
+    background-color: rgb(8, 124, 128);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 6px;
+  }
+  
+  .delete-button:hover {
+    background-color: rgb(6, 100, 103); /* Slightly darker shade on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .video-item {
+      flex: 1 1 calc(50% - 16px); /* 2 videos per row on smaller screens */
+    }
+  .scrollable {
+    max-height: 380px; /* Set your desired max height */
+    overflow-y: scroll;
+  }
+  }
+  
+  @media (max-width: 480px) {
+    .video-item {
+      flex: 1 1 100%; /* 1 video per row on the smallest screens */
+    }
+    
+  }
+  .video-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 8px;
+  }
+  
+  .video-info strong {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .delete-button {
+    background-color: rgb(8, 124, 128);
+    color: white;
+    border: none;
+    padding: 8px 0; /* Adjust padding for full width button */
+    cursor: pointer;
+    margin-top: 8px;
+    border-radius: 0.5rem;
+  }
+  
+  .delete-button:hover {
+    background-color: rgb(6, 100, 103); /* Slightly darker shade on hover */
+  }
+  

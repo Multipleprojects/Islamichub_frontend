@@ -1,0 +1,37 @@
+
+.userscrollbar {
+    max-height: 280px; /* Set your desired max height */
+    overflow-y: scroll;
+    /* For modern browsers */
+    scrollbar-color: rgb(8,124,128) rgba(0, 0, 0, 0.1); /* Track color is rgba(0, 0, 0, 0.1) */
+  }
+  
+  /* For WebKit browsers (Chrome, Safari) */
+  .userscrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .userscrollbar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Track color */
+  }
+  
+  .userscrollbar::-webkit-scrollbar-thumb {
+    background-color: rgb(8,124,128); /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded corners for the scrollbar */
+  }
+  
+@media (max-width: 768px) {
+.userscrollbar{
+    max-height: 350px; /* Set your desired max height */
+    overflow-y: scroll;
+}
+.size{
+    font-size: 1.6rem;
+    text-align: center;
+}
+.sizee{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+}

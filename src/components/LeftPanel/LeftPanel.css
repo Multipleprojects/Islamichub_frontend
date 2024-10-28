@@ -1,0 +1,31 @@
+.LeftPanel .tabPanel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.LeftPanel .editions {
+  margin-top: 20px;
+}
+.LeftPanel{
+  display: block;
+}
+@media screen and (max-width:768px) {
+  .LeftPanel{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 15%;
+    right: 0;
+    background: rgb(255, 255, 255);
+    z-index: 9;
+    padding: 10px;
+    transform: translateX(100%);
+    width: 85%;
+    transition: all ease .3s;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .LeftPanel.showPanel{
+    transform: translateX(0);
+  }
+}
